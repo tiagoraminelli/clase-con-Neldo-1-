@@ -1,0 +1,30 @@
+.seccion_estilo{
+    background-color: $fondo;
+    color: $colorBlanco ;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h2{
+        font-family: $letra;
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+    }
+}
+
+.seccion_estilo2{
+    @extend .seccion_estilo;
+    background-color: map-get($color,fondo);
+    color: map-get($color, alternativo2);
+}
+
+.contenedor{
+    @include Flex_row_center;
+}
+
+.box{
+    background-color: map-get($color,fondo);
+    @include Zise(600px,100px);
+}

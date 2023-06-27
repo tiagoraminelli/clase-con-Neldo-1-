@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+$letra:'Montserrat', sans-serif;
+$fondo:#2d2d2d;
+$fondo2:#4e4e00;
+$fondoBlanco:#dbd0d0;
+$colorBlanco:#fff;
+$color:(primario:blue,
+primario2:red,
+secundario:green,
+alternativo:black,
+alternativo2:#fff,
+fondo:#2d2d2d,
+);
+
+@mixin Flex_col_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin  Flex_row_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin Zise($witdh,$height){ //funciones pero para css
+height: $height;
+width: $witdh;
+}
